@@ -1,0 +1,83 @@
+{
+  "client": {
+    "host": ""
+  },
+  "server": {
+    "current_time": 1,
+    "services": [
+      {
+        "name": "OpenWeatherMap",
+        "widgets": [
+          {
+            "name": "Weather",
+            "description": "Affiche la température et la météo pour une ville donnée",
+            "params": [
+              {
+                "name": "city"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "name": "ConvertMoney",
+        "widgets": [
+          {
+            "name": "Convertisseur de monnaie",
+            "description": "converti une somme d'argent donnée dans un format en un autre format",
+            "params": [
+              {
+                "source": "format de la source",
+                "dest": "format de la destination",
+                "value": "somme à convertir"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "name": "NASA",
+        "widgets": [
+          {
+            "name": "earth",
+            "description": "Affiche la photo prise de l'espace d'une zone sur Terre",
+            "params": [
+              {
+                "latitude": "latitude",
+                "longitude": "longitude"
+              }
+            ]
+          },
+          {
+            "name": "APOD",
+            "description": "Affiche l'image du jour en Astronomie",
+            "params": [
+              {
+                "date": "jour"
+              }
+            ]
+          },
+          {
+            "name": "EPIC",
+            "description": "Affiche une photo de la terre prise par l'appareil DSCOVR EPIC",
+            "params": [
+              {
+                "date": "jour",
+                "position": "Position"
+              }
+            ]
+          },
+          {
+            "name": "MarsRover",
+            "description": "Affiche une photo prise par un Mars Rover de la NASA",
+            "params": [
+              {
+                "picture": "image"
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  }
+}
